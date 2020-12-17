@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rose" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/firendCardName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:id="@+id/cardName"
+                android:layout_width="217dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:text="title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/myImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/DELETEButton"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="18dp"
+                android:backgroundTint="@color/white"
+                android:text="DELETE"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/myImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cardStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="8:30 am"
+                app:layout_constraintStart_toEndOf="@+id/myImageView"
+                app:layout_constraintTop_toBottomOf="@+id/cardName" />
+
+            <TextView
+                android:id="@+id/cardTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="to"
+                app:layout_constraintStart_toEndOf="@+id/cardStartTime"
+                app:layout_constraintTop_toBottomOf="@+id/cardName" />
+
+            <TextView
+                android:id="@+id/cardEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:text="8:30 am"
+                app:layout_constraintStart_toEndOf="@+id/cardTo"
+                app:layout_constraintTop_toBottomOf="@+id/cardName" />
+
+            <TextView
+                android:id="@+id/cardDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="12/12/12"
+                app:layout_constraintStart_toEndOf="@+id/cardEndTime"
+                app:layout_constraintTop_toBottomOf="@+id/cardName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

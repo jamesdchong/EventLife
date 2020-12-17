@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CSE110EventLife.iml" filepath="$PROJECT_DIR$/../CSE110EventLife.iml" group="CSE110EventLife" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="CSE110EventLife/app" />
+    </modules>
+  </component>
+</project>

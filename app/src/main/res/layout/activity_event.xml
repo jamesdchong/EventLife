@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkrose"
+    android:orientation="vertical"
+    tools:context=".EventActivity">
+
+    <!--    <com.google.android.gms.maps.MapView-->
+    <!--        android:id="@+id/eventFormMapView"-->
+    <!--        android:layout_width="268dp"-->
+    <!--        android:layout_height="177dp"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        android:layout_marginTop="345dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:apiKey="AIzaSyCPC0s4rwW6Nr4hFsmPE_ToQRRI0OVU1Q4"-->
+    <!--        android:clickable="true"-->
+    <!--        android:enabled="true"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/eventFormImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/event4" />
+
+    <TextView
+        android:id="@+id/eventFormDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Date"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormLocation" />
+
+    <TextView
+        android:id="@+id/eventFormDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Description"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormImageView" />
+
+    <TextView
+        android:id="@+id/eventFormName"
+        android:layout_width="210dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormDate" />
+
+    <TextView
+        android:id="@+id/eventFormCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Created By"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormDate" />
+
+    <TextView
+        android:id="@+id/tvCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormCreatedBy" />
+
+    <TextView
+        android:id="@+id/eventFormStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Start Time"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormName" />
+
+    <TextView
+        android:id="@+id/eventFormEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="35dp"
+        android:text="End Time"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormName" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormStartTime" />
+
+    <TextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/eventFormImageView"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormEndTime" />
+
+    <TextView
+        android:id="@+id/eventFormLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Location"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormImageView" />
+
+    <Button
+        android:id="@+id/eventFormGuests"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
+        android:text="Attendees"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormDate" />
+
+    <Button
+        android:id="@+id/eventFormRSVP"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="@color/white"
+        android:text="RSVP"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="410dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackvines" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="410dp"
+        android:rotation="180"
+        android:scaleX="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackvines" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="216dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/eventFormGuests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormDescription"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/eventFormDate"
+        app:layout_constraintEnd_toStartOf="@+id/tvDescription"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventFormLocation"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

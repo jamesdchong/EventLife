@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkrose"
+    tools:context=".Profile">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profileUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="7dp"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+        <Button
+            android:id="@+id/viewFriendsButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="365dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/white"
+            android:text="Friends List"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/viewArchiveButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:text="RSVP'd Events"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewHistoryButton" />
+
+        <Button
+            android:id="@+id/viewHistoryButton"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="365dp"
+            android:backgroundTint="@color/white"
+            android:text="Created Events"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/white"
+            android:text="Logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewFriendsButton" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="216dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="410dp"
+            android:layout_height="207dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="159dp"
+            android:layout_height="161dp"
+            android:layout_marginTop="136dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/khosla" />
+
+        <ImageButton
+            android:id="@+id/updateBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_insert_photo_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/updatePicBtn"
+            android:layout_width="44dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePicture"
+            app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+            app:srcCompat="@drawable/ic_insert_photo_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

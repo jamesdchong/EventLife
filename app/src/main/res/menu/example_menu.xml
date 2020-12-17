@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Menu for search bar */ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#646464"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+    <item
+        android:id="@+id/add_friend_button"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>
+

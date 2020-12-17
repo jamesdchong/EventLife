@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkrose"
+    tools:context=".CreateEventActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnImage"
+        android:layout_width="165dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+    <TextView
+        android:id="@+id/createEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Event Name"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createEventTvName"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="ex: CSE Study Jam!"
+        android:maxLength="25"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventName" />
+
+    <TextView
+        android:id="@+id/createEventLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Location"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImage" />
+
+    <EditText
+        android:id="@+id/createEventTvLocation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="ex: 9500 Gilman Dr"
+        android:inputType="textPostalAddress"
+        android:maxLength="20"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createEventLocation" />
+
+    <EditText
+        android:id="@+id/createEventTvDate"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="mm/dd/yy"
+        android:inputType="none"
+        android:focusable="false"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createEventDate" />
+
+    <TextView
+        android:id="@+id/createEventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Date"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createEventLocation" />
+
+    <TextView
+        android:id="@+id/createEventStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Start Time"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventTvName" />
+
+    <EditText
+        android:id="@+id/createEventTvStartTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="ex: 8:30"
+        android:inputType="none"
+        android:focusable="false"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventStartTime" />
+
+    <TextView
+        android:id="@+id/createEventEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:text="End Time"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventTvName" />
+
+    <EditText
+        android:id="@+id/createEventTvEndTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:ems="10"
+        android:hint="ex: 13:00"
+        android:inputType="none"
+        android:focusable="false"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventEndTime" />
+
+    <TextView
+        android:id="@+id/createEventDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Description"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnImage" />
+
+    <EditText
+        android:id="@+id/createEventTvDescription"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:maxLength="115"
+        android:hint="10-150 characters describing the event"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/btnImage"
+        app:layout_constraintTop_toBottomOf="@+id/createEventDescription" />
+
+    <Button
+        android:id="@+id/btnCreateEvent"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="430dp"
+        android:backgroundTint="@color/white"
+        android:text="CREATE EVENT"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="410dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackvines" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="410dp"
+        android:rotation="180"
+        android:scaleX="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackvines" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

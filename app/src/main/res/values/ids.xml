@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Description" type="id" />
+    <item name="btnCancel" type="id" />
+    <item name="Tag" type="id" />
+    <item name="textView8" type="id" />
+    <item name="EndTime" type="id" />
+    <item name="StartTime" type="id" />
+    <item name="Day" type="id" />
+    <item name="Location" type="id" />
+    <item name="Eventname" type="id" />
+</resources>
