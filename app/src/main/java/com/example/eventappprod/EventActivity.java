@@ -210,7 +210,6 @@ public class EventActivity extends AppCompatActivity {
                     // Update info in database
 
                     //Ref is event path and eventRef is also event path
-                    System.out.println("blah " + myevent.getName());
                     ref.child(myevent.getName()).child("userGoing").setValue(usersGoing);
                     userRef.child(currUser.getUserId()).child("rsvpevents").setValue(rsvp);
                     Toast.makeText(EventActivity.this, "RSVP'd to " + myevent.getName(), Toast.LENGTH_SHORT).show();

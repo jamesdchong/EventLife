@@ -217,7 +217,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
 
                     String usersGoing = personGoing + "," + peopleGoing;
 
-                    currUser.addRSVPEvent(rsvp + itemLabel);
+                    currUser.addRSVPEvent(itemLabel);
                     userRef.child(currUser.getUserId()).child("rsvpevents").setValue(rsvp);
 
                     eventRef.child(itemLabel).child("userGoing").setValue(usersGoing);
@@ -276,6 +276,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
                     String userRSVP = currUser.getRSVPEvents();
                     String removeEvent = userRSVP.replace(event.getName()+",", "");
 
+                    currUser.removeRSVPEvent(event.getName());
 
                     userRef.child(currUser.getUserId()).child("rsvpevents").setValue(removeEvent);
 
@@ -373,7 +374,6 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
 
             holder.mCreatedDeleteButton.setOnClickListener(new View.OnClickListener() {
 
-                //TODO: for khanh
                 // Get the clicked item label
 
                 @Override
