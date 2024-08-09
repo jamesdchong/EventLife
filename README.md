@@ -2,11 +2,10 @@
 ![](app/src/main/res/drawable/CalendarLogo.png)
 
 ## Members
-**Elise Kim** - *Project Manager*\
-**Kevin Dong** - *Business Analyst*\
-**Vincent Tran** - *Senior System Analyst*\
-**Ninh Tran** - *Software Architect*\
 **James Chong** - *Software Development Lead*\
+**Kevin Dong** - *Business Analyst*\
+**Vincent Tran** - *System Analyst*\
+**Ninh Tran** - *Software Architect*\
 **Khanh Pham** - *Algorithm Specialist*\
 **Casey Pham** - *Database Specialist*\
 **Aaron Chen** - *Quality Assurance Lead*\
@@ -28,5 +27,5 @@ After installing, all that needs to be done is open the app "EventLife" and crea
 
 ## Technical Support
 **James Chong**\
-**Email:** j2chong@ucsd.edu\
+**Email:** jamesdchong@gmail.com\
 **Phone:** (818)587-6113
